@@ -849,12 +849,12 @@ build_mod_sdcard() {
     )
 
     # Cleanup function
-    local cleanup() {
-        echo -e "${INFO} Cleaning up temporary files..."
-        sudo umount boot 2>/dev/null || true
-        sudo losetup -D 2>/dev/null || true
-        rm -rf mod-boot-sdcard-main main.zip 2>/dev/null || true
-    }
+    #local cleanup() {
+#        echo -e "${INFO} Cleaning up temporary files..."
+ #       sudo umount boot 2>/dev/null || true
+  #      sudo losetup -D 2>/dev/null || true
+   #     rm -rf mod-boot-sdcard-main main.zip 2>/dev/null || true
+    #}
 
     # Set trap for cleanup
     trap cleanup EXIT

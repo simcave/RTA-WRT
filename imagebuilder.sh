@@ -164,7 +164,7 @@ download_imagebuilder() {
             ARCH_1="arm64"
             ARCH_2="aarch64"
             ARCH_3="aarch64_generic"
-            KERNEL="6.1.66-DBAI"
+            KERNEL="5.4.279"
             ;;
         rk*) # Rockchip (RK*)
             op_target="rockchip"
